@@ -1,0 +1,803 @@
+.ic-landing#root {
+  position: relative;
+  font: normal normal 18px/1.2 "Microsoft YaHei", sans-serif;
+}
+
+.ic-landing .clear-float::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.ic-landing .main-section {
+  padding: 30px 20%;
+}
+
+.ic-landing .section-title {
+  position: relative;
+  width: 200px;
+  height: 75px;
+  line-height: 70px;
+  margin: 30px auto 50px;
+  text-align: center;
+  color: #1cb5d8;
+  font-size: 2.2em;
+}
+
+.ic-landing .section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100px;
+  height: 5px;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to right, #1cb5d8, #73BF44);
+}
+
+.ic-landing .section-caption {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  transform: translateY(-40%);
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.ic-landing .btn {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  appearance: none;
+  background-color: #1cb5d8;
+  border: 1px solid transparent;
+  border-radius: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.2;
+  margin: .6rem 0;
+  padding: 0.3rem 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  outline: none;
+  word-spacing: 0.25rem;
+}
+
+.ic-landing .btn-primary {
+  background-color: #1cb5d8;
+}
+
+.ic-landing .btn-primary:hover {
+  background-color: #006281;
+}
+
+.ic-landing .btn[disabled] {
+  background-color: #d7d7d7;
+}
+
+.ic-landing .popup-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.6);
+  z-index: 98;
+  display: none;
+}
+
+.ic-landing .popup-window {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 460px;
+  min-height: 300px;
+  padding: .8rem 1.2rem;
+  background-color: #fff;
+  border-top: 3px solid #1cb5d8;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  display: none;
+}
+
+.ic-landing .popup-window h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.ic-landing .popup-window .mktoButtonWrap {
+  margin-left: 0 !important;
+}
+
+.ic-landing .popup-window-close {
+  position: absolute;
+  right: .6rem;
+  top: .6rem;
+  width: 20px;
+  height: 20px;
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/close-button.png") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+@keyframes wandering {
+  0% {
+    left: 0px;
+    top: 50%;
+  }
+  25% {
+    left: 5px;
+    top: 51%;
+  }
+  50% {
+    left: 10px;
+    top: 50%;
+  }
+  75% {
+    left: 5px;
+    top: 49%;
+  }
+  100% {
+    left: 0px;
+    top: 50%;
+  }
+}
+
+.ic-landing .more-info-section-lg {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  width: 120px;
+  height: 338px;
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Side-banner.png") no-repeat top;
+  background-size: cover;
+  transform: translateY(-50%);
+  z-index: 97;
+  text-decoration: none;
+  animation: wandering 5s infinite;
+}
+
+.ic-landing header {
+  position: relative;
+}
+
+.ic-landing header .header-background {
+  width: 100%;
+  height: 500px;
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Top-banner.jpg") no-repeat center fixed;
+  background-size: cover;
+  filter: blur(1px);
+}
+
+.ic-landing .header-caption {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ic-landing .header-caption h1, .ic-landing .header-caption h2 {
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.ic-landing .header-caption h1 {
+  font-size: 4rem;
+}
+
+.ic-landing .header-caption h2 {
+  font-size: 3.2rem;
+}
+
+.ic-landing .data-section {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 10px;
+  background-color: #d7d7d7;
+}
+
+.ic-landing .data-section .section-caption {
+  width: 75%;
+}
+
+.ic-landing .data-section .section-caption p:first-child {
+  margin-top: 0;
+}
+
+.ic-landing .data-section .section-caption .data-section-logo {
+  width: 60%;
+  margin: 30px auto 0;
+  text-align: center;
+  display: flex;
+}
+
+.ic-landing .data-section .section-caption .data-section-logo div {
+  flex: 1;
+}
+
+.ic-landing .data-section .section-caption .data-section-logo div img {
+  width: 100%;
+}
+
+.ic-landing .data-section .section-caption .data-section-logo div:first-child {
+  margin-right: 2rem;
+}
+
+.ic-landing .data-section .section-caption .data-section-logo div:last-child img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ic-landing .data-section .data-section-data {
+  margin-top: -80px;
+}
+
+.ic-landing .data-section .data-section-data ul {
+  display: flex;
+  padding: 0;
+}
+
+.ic-landing .data-section .data-section-data ul li {
+  flex: 1;
+  text-align: center;
+  list-style: none;
+  padding: .5rem;
+}
+
+.ic-landing .data-section .data-section-data ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.ic-landing .data-section .data-section-data ul li h3 {
+  height: 60px;
+}
+
+.ic-landing .data-section .data-section-data ul li h3 span {
+  font-size: 24px;
+}
+
+.ic-landing .data-section .data-section-data ul li h2 {
+  margin-top: .4em;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.ic-landing .data-section .sprite {
+  background-image: url(https://www.tek.com.cn/sites/default/files/2018-01/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.ic-landing .data-section .sprite-article {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+
+.ic-landing .data-section .sprite-company {
+  width: 32px;
+  height: 32px;
+  background-position: -32px 0;
+}
+
+.ic-landing .data-section .sprite-handout {
+  width: 32px;
+  height: 32px;
+  background-position: -64px 0;
+}
+
+.ic-landing .data-section .sprite-people {
+  width: 32px;
+  height: 32px;
+  background-position: -96px 0;
+}
+
+.ic-landing .lesson-section-lg,
+.ic-landing .lesson-section-md,
+.ic-landing .lesson-section-sm {
+  position: relative;
+  background-color: #2e2d31;
+}
+
+.ic-landing .lesson-section-fix {
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  z-index: 1;
+}
+
+.ic-landing .lesson-item-list {
+  position: relative;
+  display: flex;
+  padding: 0;
+  z-index: 2;
+}
+
+.ic-landing .lesson-item {
+  position: relative;
+  flex: 1;
+  margin-bottom: 20px;
+  list-style: none;
+  transition: all 1s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ic-landing .lesson-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.ic-landing .lesson-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 30%;
+  height: 3px;
+  transform: translateX(-50%);
+  transition: all .8s;
+  background-image: linear-gradient(to right, #1cb5d8, #73BF44);
+  opacity: 1;
+}
+
+.ic-landing .lesson-item:hover .lesson-brief {
+  opacity: 0;
+}
+
+.ic-landing .lesson-item:hover .lesson-detail {
+  opacity: 1;
+}
+
+.ic-landing .lesson-item:hover::before {
+  bottom: 20px;
+  opacity: 0;
+}
+
+.ic-landing .lesson-item h3 {
+  text-align: center;
+}
+
+.ic-landing .lesson-number {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.ic-landing .lesson-sm-detail {
+  padding: .5rem 1rem 2rem;
+  text-align: center;
+}
+
+.ic-landing .lesson-sm-detail h2 {
+  font-size: 1.2rem;
+  margin: .5rem 0;
+}
+
+.ic-landing .lesson-sm-detail h3 {
+  font-size: 1rem;
+  margin: .5rem 0;
+}
+
+.ic-landing .lesson-wrapper {
+  position: relative;
+  min-height: 260px;
+  background-color: rgba(28, 181, 216, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 2px 2px #006281;
+}
+
+.ic-landing .lesson-brief {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: .5rem 1rem 2rem;
+  transition: opacity .8s;
+  opacity: 1;
+}
+
+.ic-landing .lesson-brief h2 {
+  position: relative;
+  font-size: 1.4rem;
+  margin-top: .6rem;
+  margin-bottom: 2rem;
+}
+
+.ic-landing .lesson-brief h2::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  left: 0;
+  bottom: -1rem;
+  background-color: #fff;
+}
+
+.ic-landing .lesson-brief h3 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.ic-landing .lesson-detail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: .5rem 1rem 2rem;
+  transition: opacity .8s;
+  opacity: 0;
+  text-align: center;
+}
+
+.ic-landing .lesson-detail h2 {
+  font-size: 1rem;
+  margin: .5rem 0;
+}
+
+.ic-landing .lesson-detail h3 {
+  font-size: .8rem;
+  margin: .5rem 0;
+}
+
+.ic-landing .lesson-detail-image {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 2px #1cb5d8;
+}
+
+.ic-landing .lesson-detail-image-1 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Mike.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-2 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Ji.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-3 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Zhao.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-4 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Wang.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-5 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Cai.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-6 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Gao.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-7 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Han.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-detail-image-8 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Teacher-Liu.jpg") no-repeat center;
+  background-size: 80px 110px;
+}
+
+.ic-landing .lesson-section-sm .lesson-item-list {
+  flex-wrap: wrap;
+}
+
+.ic-landing .lesson-section-sm .lesson-item {
+  flex: 0 1 100%;
+  margin-right: 0;
+}
+
+.ic-landing .banner-section {
+  width: 100%;
+  height: 600px;
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/Content-banner.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+.ic-landing .seminar-section {
+  background-color: #006281;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.ic-landing .seminar-section .section-title {
+  color: #fff;
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.ic-landing .seminar-section .section-caption {
+  background-color: #1cb5d8;
+  color: #fff;
+}
+
+.ic-landing .seminar-section .section-caption h2 {
+  margin: 1rem 0;
+}
+
+.ic-landing .seminar-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.ic-landing .seminar-item {
+  position: relative;
+  flex: 1;
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ic-landing .seminar-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.ic-landing .seminar-brief h2 {
+  font-size: 1.8rem;
+}
+
+.ic-landing .seminar-brief h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.ic-landing .seminar-brief-image-1 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/City-Nanjing.jpg") no-repeat center;
+}
+
+.ic-landing .seminar-brief-image-2 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/City-Hefei.jpg") no-repeat center;
+}
+
+.ic-landing .seminar-brief-image-3 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/City-Shanghai.jpg") no-repeat center;
+}
+
+.ic-landing .seminar-brief-image-4 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/City-Xiamen.jpg") no-repeat center;
+}
+
+.ic-landing .seminar-brief-image-5 {
+  background: url("https://www.tek.com.cn/sites/default/files/2018-01/City-Shenzhen.jpg") no-repeat center;
+}
+
+.ic-landing .seminar-brief-image {
+  display: block;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 1px 2px #1cb5d8;
+  background-size: cover;
+}
+
+.ic-landing .more-info-section {
+  background-color: #d7d7d7;
+}
+
+.ic-landing .more-info-section-item {
+  position: relative;
+  width: calc(50% - 2rem);
+  padding-right: 2rem;
+}
+
+.ic-landing .more-info-section-item p {
+  padding-right: 2rem;
+}
+
+.ic-landing .more-info-section-item::after {
+  content: '';
+  position: absolute;
+  right: -2.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 100px;
+  background-color: #333;
+}
+
+@media screen and (min-width: 1400px) {
+  .ic-landing .lesson-section-lg {
+    display: block;
+  }
+  .ic-landing .lesson-section-md {
+    display: none;
+  }
+  .ic-landing .lesson-section-sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .ic-landing .seminar-item {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .ic-landing .seminar-item {
+    width: 80%;
+    flex-basis: 80%;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1399px) {
+  .ic-landing .lesson-section-lg {
+    display: none;
+  }
+  .ic-landing .lesson-section-md {
+    display: block;
+  }
+  .ic-landing .lesson-section-sm {
+    display: none;
+  }
+  .ic-landing .header-caption h1 {
+    font-size: 3.2rem;
+  }
+  .ic-landing .header-caption h2 {
+    font-size: 2rem;
+  }
+  .ic-landing .seminar-brief {
+    padding-bottom: 0;
+  }
+  .ic-landing .seminar-brief-image {
+    width: 100%;
+  }
+  .ic-landing .more-info-section .section-title {
+    margin-bottom: 40px;
+  }
+  .ic-landing .more-info-section-item {
+    width: 100%;
+    padding-right: 0;
+  }
+  .ic-landing .more-info-section-item img {
+    width: 100% !important;
+  }
+  .ic-landing .more-info-section-item p {
+    padding-right: 0;
+  }
+  .ic-landing .more-info-section-item::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ic-landing .more-info-section {
+    display: none;
+  }
+  .ic-landing .more-info-section-lg {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ic-landing .lesson-section-lg {
+    display: none;
+  }
+  .ic-landing .lesson-section-md {
+    display: none;
+  }
+  .ic-landing .lesson-section-sm {
+    display: block;
+  }
+  .ic-landing .more-info-section-lg {
+    display: none;
+  }
+  .ic-landing .main-section {
+    padding: 30px 10%;
+  }
+  .ic-landing .section-caption {
+    width: 80% !important;
+  }
+  .ic-landing .header-caption h1 {
+    font-size: 3rem;
+  }
+  .ic-landing .header-caption h2 {
+    font-size: 2rem;
+  }
+  .ic-landing .data-section .section-caption {
+    transform: translateY(-20%);
+  }
+  .ic-landing .data-section-logo {
+    width: 100% !important;
+    display: block !important;
+  }
+  .ic-landing .data-section-logo div {
+    margin: 0 auto 15px !important;
+    width: 90%;
+  }
+  .ic-landing .data-section-logo div:last-child {
+    width: 70%;
+    margin-bottom: 0 !important;
+  }
+  .ic-landing .data-section-data ul {
+    display: block !important;
+  }
+  .ic-landing .data-section-data li {
+    display: list-item;
+    width: calc(50% - 1.5rem);
+    float: left;
+    margin-right: .5rem !important;
+  }
+  .ic-landing .data-section-data li h2 {
+    font-size: 2.6rem !important;
+  }
+  .ic-landing .banner-section {
+    background-position: -400px center;
+  }
+  .ic-landing .seminar-section .section-caption h2 {
+    font-size: 1.3rem;
+  }
+  .ic-landing .seminar-item {
+    width: 100%;
+    flex-basis: 100%;
+    margin-right: 0 !important;
+  }
+  .ic-landing .seminar-brief {
+    padding-bottom: 0;
+  }
+  .ic-landing .seminar-brief-image {
+    width: 100%;
+  }
+  .ic-landing .more-info-section .section-title {
+    margin-bottom: 40px;
+  }
+  .ic-landing .more-info-section .more-info-section-button {
+    text-align: center;
+  }
+  .ic-landing .more-info-section .more-info-section-button a {
+    font-size: 1.2rem;
+  }
+  .ic-landing .more-info-section-item {
+    width: 100%;
+    padding-right: 0;
+  }
+  .ic-landing .more-info-section-item img {
+    width: 100% !important;
+  }
+  .ic-landing .more-info-section-item p {
+    padding-right: 0;
+  }
+  .ic-landing .more-info-section-item::after {
+    display: none;
+  }
+  .ic-landing .popup-window {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .ic-landing .popup-window h3 {
+    margin: 1rem .6rem;
+  }
+}
+
+/*# sourceMappingURL=1711ic.css.map */

@@ -1,0 +1,81 @@
+
+#survey_widget_block {
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 15px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  color: #252525;
+  text-align:left; z-index:999999;
+  position:relative;
+  font:14px/20px Tahoma, Arial, san-serif;
+  width:350px;
+  line-height:20px;
+  padding:20px 10px;
+  -webkit-box-shadow: rgba(0,0,0,.6) 0 0 8px;
+  -moz-box-shadow: rgba(0,0,0,.6) 0 0 8px;
+  margin:50px auto;
+  background: white url(/themes/custom/tektronix/source/js/sg_survey/tek_stripes.png) bottom right no-repeat;
+}
+
+#sg_popup_dialog.ui-dialog-content {
+  background: transparent;
+}
+
+.sg-dialog h3 {
+  margin: 0 0 10px 0;
+}
+.sg_buttons {
+  position:relative;
+  z-index:5;
+  padding-bottom: .3rem;
+}
+
+
+#tek_brand {
+  display:block;
+  width:140px;
+  height:35px;
+}
+
+#tek_brand { background: url(tek-logo.png) bottom left no-repeat;}
+
+.sg-dialog .btn {
+  padding: 0.3125rem 0.9375rem;
+}
+.sg-dialog .btn:focus {
+  background-color: #1CB5D8;
+}
+.sg-dialog .btn--label {
+  color: #ccc !important;
+}
+.sg-dialog .btn--label:hover {
+  color: #fff !important;
+}
+
+#survey_close_icon {
+  position: absolute;
+  display: block;
+  background: white;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  right: 5px; top: 5px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  transition: background .5s;
+  -moz-transition: background .5s;
+  -webkit-transition: background .5s;
+  -o-transition: background .5s;
+  font: 14px/20px Tahoma, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#survey_close_icon:hover { background: #eeeeee; }
+
+.sg-dialog .ui-dialog-titlebar { display:none; }
+.sg-dialog .ui-widget-content a {color: #fff;}
+.sg-dialog {top: 100px !important; z-index: 999999 !important; opacity: 1 !important; background: transparent; border: none; position: fixed !important;}
+.sg-dialog .ui-widget-overlay {background-color: #000000 !important; z-index: 999999 !important;}

@@ -1,0 +1,12 @@
+{
+  "site_title": "Tektronix Styleguide",
+  "mobile": "(min-width: 0)",
+  "mobile_landscape": "(min-width: 544px)",
+  "tablet": "(min-width: 768px)",
+  "desktop": "(min-width: 992px)",
+  "desktop_lg": "(min-width: 1200px)",
+  "field_block_title": "We'll Calibrate Your Entire Bench",
+  "field_description": "Tektronix multi-vendor services can calibrate +140,000 manufacturers' instruments.",
+  "button_url": "/",
+  "button_title": "Get a FastQuote"
+}
